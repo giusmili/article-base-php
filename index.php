@@ -1,6 +1,9 @@
 <!-- head -->
     <?php
+        include_once __DIR__ ."/controller/config.php";
+        include_once __DIR__ ."/model/data.php";
         include_once __DIR__ ."/partial/head.inc.php";
+        
 
   
     # main

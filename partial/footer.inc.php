@@ -1,5 +1,5 @@
 <footer>
         <p>
-            &copy; - MIT - <time datetime="2025-01-01">2025</time>
+            &copy; - MIT - <time datetime="<?= $date->format("Y-d-m")?>"><?= $date->format("Y")?></time>
         </p>
 </footer>

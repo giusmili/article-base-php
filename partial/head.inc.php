@@ -13,6 +13,6 @@
 <body>
     <header>
         <h1>
-            <span aria-hidden="true">💡</span>Lire nos articles
+            <span aria-hidden="true">💡</span><?= data["title"] ?>
         </h1>
     </header>
