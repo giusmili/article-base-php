@@ -1,56 +1,17 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-    <header>
-        <h1>
-            <span aria-hidden="true">💡</span>Lire nos articles
-        </h1>
-    </header>
-    <main>
-    <div class="pictures" role="img" aria-labelledby="cover">
-        <picture id="cover">
-            <source srcset="./asset/cover.jpg" media="(min-width: 1024px)">
-            <source srcset="./asset/cover.jpg" media="(min-width: 768px)">
-            <img 
-                src="./asset/cover.jpg" 
-                alt="Description de l'image"
-                loading="lazy" 
-            >
-        </picture>
-    </div>
-        
-        <article>
-            <h2>
-                <span aria-hidden="true">📈</span>Lire ce contenu
-            </h2>
-            <p>
-                With what force must these wooden paddles strike the waves 
-                which are now gently breaking over them! what a boiling of water when this powerful engine strikes it blow after blow! what a thundering noise engulfed in this paddle-box cavern! when the 'Great Eastern' goes at full speed, under the pressure of wheels measuring fifty-three feet in diameter and 166 in circumference, weighing ninety tons, and making eleven revolutions a minute. The tender had disembarked her crew; I stepped on to the fluted iron steps, and in a few minutes had 
-                crossed the fore-part of the 'Great Eastern.
-            </p>
-        </article>
-        <aside>
-            <blockquote>
-                <p>Description de l'article et l'analyse</p>
-            </blockquote>
-        </aside>
-    </main>
-   
-    <footer>
-        <p>
-            &copy; - MIT - <time datetime="2025-01-01">2025</time>
-        </p>
-    </footer>
+<!-- head -->
+    <?php
+        include_once __DIR__ ."/partial/head.inc.php";
+
+  
+    # main
+        include_once __DIR__ ."/partial/main.inc.php";
+    
+    # footer
+        include_once __DIR__ ."/partial/footer.inc.php";
+
+    ?>
+
+
     <script type="application/ld+json">
         {
           "@context": "https://schema.org/",
@@ -75,7 +36,6 @@
             "@type": "WebPage",
             "@id": "https://www.example.com/article-url"
           }
-        }
-    </script>
+        }</script>
 </body>
 </html>
